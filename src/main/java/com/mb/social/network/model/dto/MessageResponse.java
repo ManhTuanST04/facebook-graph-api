@@ -16,4 +16,8 @@ public class MessageResponse implements Serializable {
     private String message;
     private String createdTime;
     private SenderResponse from;
+
+    private String type;
+    private String url;
+    private String thumb;
 }
