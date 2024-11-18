@@ -1,4 +1,4 @@
-package com.mb.facebook_graph_api.configuration;
+package com.mb.social.network.configuration;
 
 import org.springframework.context.annotation.Configuration;
 

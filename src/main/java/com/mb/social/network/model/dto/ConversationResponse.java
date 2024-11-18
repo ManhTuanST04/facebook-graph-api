@@ -1,4 +1,4 @@
-package com.mb.facebook_graph_api.model.dto;
+package com.mb.social.network.model.dto;
 
 import lombok.*;
 

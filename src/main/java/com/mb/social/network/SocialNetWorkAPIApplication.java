@@ -1,13 +1,13 @@
-package com.mb.facebook_graph_api;
+package com.mb.social.network;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FacebookGraphApiApplication {
+public class SocialNetWorkAPIApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FacebookGraphApiApplication.class, args);
+		SpringApplication.run(SocialNetWorkAPIApplication.class, args);
 	}
 
 }

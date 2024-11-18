@@ -1,7 +1,7 @@
-package com.mb.facebook_graph_api.service;
+package com.mb.social.network.service;
 
-import com.mb.facebook_graph_api.model.dto.ConversationResponse;
-import com.mb.facebook_graph_api.model.dto.MessageResponse;
+import com.mb.social.network.model.dto.ConversationResponse;
+import com.mb.social.network.model.dto.MessageResponse;
 
 import java.util.List;
 

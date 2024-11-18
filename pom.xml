@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mb</groupId>
-    <artifactId>facebook-graph-api</artifactId>
+    <artifactId>social-network-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>facebook-graph-api</name>
-    <description>Demo Facebook Graph API</description>
+    <name>social-network-api</name>
+    <description>Demo Social Network API</description>
     <url/>
     <licenses>
         <license/>

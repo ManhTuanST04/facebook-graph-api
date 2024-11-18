@@ -1,10 +1,10 @@
-package com.mb.facebook_graph_api.service.impl;
+package com.mb.social.network.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mb.facebook_graph_api.model.dto.ConversationResponse;
-import com.mb.facebook_graph_api.model.dto.MessageResponse;
-import com.mb.facebook_graph_api.model.dto.SenderResponse;
-import com.mb.facebook_graph_api.service.FacebookService;
+import com.mb.social.network.model.dto.ConversationResponse;
+import com.mb.social.network.model.dto.MessageResponse;
+import com.mb.social.network.model.dto.SenderResponse;
+import com.mb.social.network.service.FacebookService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -145,7 +145,8 @@ public class FacebookServiceImpl implements FacebookService {
 
         Map<String, Object> messagePayload = Map.of(
                 "recipient", Map.of("id", recipientId),
-                "message", Map.of("text", message)
+                "message", Map.of("text", message),
+                "tag", "POST_PURCHASE_UPDATE"
         );
 
         restTemplate.postForEntity(url, messagePayload, Map.class);
