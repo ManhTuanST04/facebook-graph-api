@@ -21,12 +21,10 @@ public class ZaloWebhookController {
         // Xử lý sự kiện từ payload
         String eventName = (String) payload.get("event_name");
 
-        if ("user_send_text".equals(eventName)) {
+        if ("user_send_text".equals(eventName) || "user_send_image".equals(eventName) || "user_send_sticker".equals(eventName)) {
             messagingTemplate.convertAndSend("/topic/messages", payload);
 
             System.out.println("User sent a text message: " + payload);
-        } else if ("user_send_image".equals(eventName)) {
-            System.out.println("User sent an image: " + payload);
         }
 
         // Trả về phản hồi cho server
